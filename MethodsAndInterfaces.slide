@@ -1,0 +1,132 @@
+Methods and Interfaces
+
+* Methods
+
+* Method is same as function, but...
+
+.play -numbers -edit 01-as-method.go /START OMIT/,/END OMIT/
+
+* Same result without method
+
+.play -numbers -edit 02-as-function.go /START OMIT/,/END OMIT/
+
+* Value receiver
+
+.play -numbers -edit 03-value-receiver.go /START OMIT/,/END OMIT/
+
+* Value receiver
+
+.play -numbers -edit 03.0-value-receiver.go /START OMIT/,/END OMIT/
+
+* Pointer receiver
+
+.play -numbers -edit 04-pointer-receiver.go /START OMIT/,/END OMIT/
+
+* Pointer receiver
+
+.play -numbers -edit 04.0-pointer-receiver.go /START OMIT/,/END OMIT/
+
+* Same result without method
+
+.play -numbers -edit 04.1-pointer-receiver-as-function.go /START OMIT/,/END OMIT/
+
+* Error
+
+.play -numbers -edit 05-pointer-and-receiver.go /START OMIT/,/END OMIT/
+
+* Same methods name
+
+.play -numbers -edit 06-same-name.go /START OMIT/,/END OMIT/
+
+* Methods for another package
+
+.code -numbers internal/lib.go
+.play -numbers -edit 07-mathod-from-another.go
+"cannot define new methods on non-local type internal.Susa"
+
+* But...
+
+.play -numbers -edit 08-type-from-type.go /START OMIT/,/END OMIT/
+
+* Real code
+
+.code -numbers 08.1-qxtasq.go
+
+* Interfaces
+
+* Set of methods
+
+.code -numbers 09-interfaces.go /START OMIT/,/END OMIT/
+
+* Set of methods
+
+.code -numbers 10-not-interfaces.go /START OMIT/,/END OMIT/
+
+* Using
+
+.play -numbers -edit 11-using-interface.go /START OMIT/,/END OMIT/
+
+* Strange behavior
+
+.play -numbers -edit 12-interface-pointer.go /START OMIT/,/END OMIT/
+
+* Interface from interfaces
+
+.code -numbers 12.0-interface-from.go /START OMIT/,/END OMIT/
+
+* Interface can be nil
+
+.play -numbers -edit 13-nil-interface.go /START OMIT/,/END OMIT/
+
+* Interface can be nil
+
+.play -numbers -edit 13.0-nil-interface.go /START OMIT/,/END OMIT/
+
+* Error
+
+.play -numbers -edit 13.1-nil-interface.go /START OMIT/,/END OMIT/
+
+* Error interface
+
+.code -numbers -edit 14-error-interface.go /START OMIT/,/END OMIT/
+
+* Empty interface
+
+.play -numbers -edit 15-empty-interface.go /START OMIT/,/END OMIT/
+
+* Empty interface
+
+.play -numbers -edit 15.1.go /START OMIT/,/END OMIT/
+
+* Type assertion
+
+.play -numbers -edit 16-type-assertions.go /START OMIT/,/END OMIT/
+
+* Type assertion
+
+.play -numbers -edit 16.0-type-assertions.go /START OMIT/,/END OMIT/
+
+* Switch
+
+.play -numbers -edit 17-switch.go /START OMIT/,/END OMIT/
+
+* Switch with interface type
+
+.play -numbers -edit 18-switch-interface.go /START OMIT/,/END OMIT/
+
+* References
+
+Go tour (methods and interfaces)
+.link https://tour.golang.org/methods/1
+
+Methods
+.link https://link.medium.com/Eu2rXYpRqR
+
+Interfaces
+.link https://link.medium.com/3wDJx5mPqR
+
+For people who feel nostalgia
+.link https://link.medium.com/MQWayBrPqR
+
+More about errors
+.link https://link.medium.com/nkW6ZncPqR
